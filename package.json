@@ -1,14 +1,13 @@
 {
-	"name": "build-example",
+	"name": "heroku-build",
 	"version": "0.0.1",
 	"description": "",
 	"author": "Donald Pakkies",
 	"license": "MIT",
 	"scripts": {
-		"start": "node craftsman serve",
-		"serve": "node server",
+		"start": "node server",
 		"start:dev": "node craftsman serve --dev",
-		"build": "imba build server/build.imba -p -s -f -o .formidable",
+		"build": "node craftsman config:cache && imba build server/build.imba -p -s -f -o .formidable",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
 	},
