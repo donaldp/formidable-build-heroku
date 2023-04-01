@@ -11,7 +11,7 @@ const start = () => {
 	application.then((app) => {
 		app.fastify().listen({
 			port: process.env.PORT || 3000,
-			host: process.env.HOST || 'localhost'
+			host: process.env.HOST || '0.0.0.0'
 		}, (_error, address) => {
 			if (_error) {
 				console.error(_error)
