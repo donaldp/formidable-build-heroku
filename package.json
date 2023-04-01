@@ -21,7 +21,7 @@
 		"@formidablejs/scheduler": "0.1.0",
 		"@formidablejs/stubs": "0.5.0",
 		"@formidablejs/ts-ports": "0.4.3",
-		"@formidablejs/view": "^0.8.0",
+		"@formidablejs/view": "^0.8.1",
 		"axios": "^1.3.4",
 		"imba": "2.0.0-alpha.229",
 		"imba-shell": "0.4.0",
