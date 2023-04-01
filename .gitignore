@@ -2,7 +2,6 @@
 /.idea
 /.vscode
 /bootstrap/cache/config.json
-/database/db.sqlite
 /node_modules
 /storage/sessions/*.json
 .env
