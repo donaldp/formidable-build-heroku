@@ -38,10 +38,10 @@ Run the `build` command to compile the assets.
 npm run build
 ```
 
-Run the `serve` command to start the server.
+Run the `start` command to start the server.
 
 ```bash
-npm run serve
+npm run start
 ```
 
 ### How it works
@@ -50,6 +50,6 @@ The `build` command runs the `imba build` command to compile the assets. This co
 
 Once your application has been built, it is stored under the `.formidable` folder. This folder is ignored by git and should not be committed (unless you want to commit it).
 
-The `serve` command runs the `node server` command which runs the `server/index.js` file. This file imports the `application` interface from the `.formidable` folder and starts the server.
+The `start` command runs the `node server` command which runs the `server/index.js` file. This file imports the `application` interface from the `.formidable` folder and starts the server.
 
 > It is important to note that the `server` folder is not ignored by git. This is because it contains the `index.js` file which is used to start the server.
