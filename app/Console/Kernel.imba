@@ -12,5 +12,5 @@ export class Kernel < ConsoleKernel
 
 	def schedule schedule\Schedule
 		schedule.call(do
-			Log.info 'Hello World'
+			console.log 'Hello World'
 		).everyMinute!
