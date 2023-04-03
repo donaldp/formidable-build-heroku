@@ -36,4 +36,7 @@ const { Server } = require('@formidablejs/framework')
 
 Server
 	.use(require('./.formidable/build').default)
-	.start()
+	.start({
+		port: process.env.PORT || 3000,
+		host: process.env.HOST || '0.0.0.0'
+	})
