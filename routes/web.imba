@@ -1,5 +1,5 @@
 import { App } from '../resources/views/app'
-import { Request, config } from '@formidablejs/framework'
+import { Request } from '@formidablejs/framework'
 import { Route } from '@formidablejs/framework'
 import { view } from '@formidablejs/framework'
 

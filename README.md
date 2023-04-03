@@ -1,55 +1,23 @@
-## Formidable (with Build Step)
+## About Formidable
+Formidable is a Imba Framework for Rapid API and Full-Stack Development.
 
-This example shows how to use Formidable with a build step.
+![Core](https://github.com/formidablejs/framework/actions/workflows/0-core-test.yml/badge.svg)
+![E2E](https://github.com/formidablejs/framework/actions/workflows/1-e2e-test.yml/badge.svg)
+![npm](https://img.shields.io/npm/v/@formidablejs/framework)
+![GitHub](https://img.shields.io/github/license/formidablejs/framework)
 
-### Prerequisites
+## Contributing
 
-- [Node.js](https://nodejs.org/en/)
+Thank you for considering contributing to the Formidable framework! The contribution guide can be found in the [Formidable documentation](https://www.formidablejs.org/docs/contributions).
 
-### Getting Started
+## Code of Conduct
 
-Copy the `.env.example` file to `.env` and fill in the values.
+In order to ensure that the Formidable community is welcoming to all, please review and abide by the [Code of Conduct](https://www.formidablejs.org/docs/contributions#code-of-conduct).
 
-```bash
-cp .env.example .env
-```
+## Security Vulnerabilities
 
-Install the dependencies...
+If you discover a security vulnerability within Formidable, please send an e-mail to Donald Pakkies via [donaldpakkies@gmail.com](mailto:donaldpakkies@gmail.com). All security vulnerabilities will be promptly addressed.
 
-```bash
-npm install
-```
+## License
 
-Set the application key.
-
-```bash
-node craftsman key:generate
-```
-
-Cache environment variables.
-
-```bash
-node craftsman config:cache
-```
-
-Run the `build` command to compile the assets.
-
-```bash
-npm run build
-```
-
-Run the `start` command to start the server.
-
-```bash
-npm run start
-```
-
-### How it works
-
-The `build` command runs the `imba build` command to compile the assets. This command targets the `server/build.imba` file which exports the formidable `application` interface.
-
-Once your application has been built, it is stored under the `.formidable` folder. This folder is ignored by git and should not be committed (unless you want to commit it).
-
-The `start` command runs the `node server` command which runs the `server/index.js` file. This file imports the `application` interface from the `.formidable` folder and starts the server.
-
-> It is important to note that the `server` folder is not ignored by git. This is because it contains the `index.js` file which is used to start the server.
+The Formidable framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
