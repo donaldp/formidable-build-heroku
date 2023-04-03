@@ -1,2 +1,2 @@
 web: npm start
-cron: node craftsman schedule:run
+worker: node craftsman schedule:run
